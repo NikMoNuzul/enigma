@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Send a secret message!</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+</head>
+
+<div class="container">
+	<div class="vertical-center">
+		<div class="container-fluid">
+			<h2 class="text-center" id="enigmaMachine">
+				Enigma Machine
+			</h2>
+
+			<p class="text-center" id="sentenceDescription">
+				Insert sentence below...
+			</p>
+
+			<div class="row d-flex justify-content-center">
+				<textarea id="inputbox"></textarea>
+  </div>
+	
+  <div class="row d-flex justify-content-center">
+     <select class="text-center" name="choice" id="choice">
+        <option value="cipher">Choose a cipher</option>
+        <option value="caesar4">Caesar4</option>
+        <option value="caesar7">Caesar7</option>
+        <option value="caesar13">Caesar13</option>
+    </select>
+  </div>
+    <div class="col-md-12 text-center">
+      <input class="btn btn-default" id="clear" type="button" value="Clear" onclick="javascript:eraseText();">
+      </input>
+      <input class="btn btn-default" id="cipher" type="button" value="Cipher" onclick="javascript:cipherRot13();">
+      </input>
+      </input>
+      <input class="btn btn-default" id="decipher" type="button" value="Decipher" onclick="javascript:decipherRot13();">
+      </input>
+    </div>
+	<h2 class="text-center" id="about">
+	Created by Nik Nuzul
+	</h2>
+</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</html>
