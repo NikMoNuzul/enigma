@@ -1,34 +1,34 @@
 // For Clear button
 function eraseText() {
-    document.getElementById("inputbox").value = "";
-    document.getElementById("sentenceDescription").innerHTML = "Insert sentence below...";
+    document.getElementById("input").value = "";
+    document.getElementById("instruction").innerHTML = "Insert sentence below...";
 }
 
 // For Cipher button
 function cipherRot13() {
-  str = document.getElementById("inputbox").value;
+  str = document.getElementById("input").value;
   cip = document.getElementById("choice").value;
   str = str.toUpperCase();
   console.log(str);
   if (cip == "caesar4"){
     let ans = str.replace(/[A-Z]/g, caesar4);
     console.log(ans);
-    document.getElementById('inputbox').value = ans;
-    document.getElementById("sentenceDescription").innerHTML = "Sentence was CIPHERED!";
+    document.getElementById('input').value = ans;
+    document.getElementById("instruction").innerHTML = "Sentence was CIPHERED!";
     return ans;
   }
   else if (cip == "caesar7"){
     let ans = str.replace(/[A-Z]/g, caesar7);
     console.log(ans);
-    document.getElementById('inputbox').value = ans;
-    document.getElementById("sentenceDescription").innerHTML = "Sentence was CIPHERED!";
+    document.getElementById('input').value = ans;
+    document.getElementById("instruction").innerHTML = "Sentence was CIPHERED!";
     return ans;
   }
   else if (cip == "caesar13"){
     let ans = str.replace(/[A-Z]/g, caesar13);
     console.log(ans);
-    document.getElementById('inputbox').value = ans;
-    document.getElementById("sentenceDescription").innerHTML = "Sentence was CIPHERED!";
+    document.getElementById('input').value = ans;
+    document.getElementById("instruction").innerHTML = "Sentence was CIPHERED!";
     return ans;
   }
   else{
@@ -68,29 +68,29 @@ function cipherRot13() {
 
 // For Decipher button
 function decipherRot13() {
-  str = document.getElementById("inputbox").value;
+  str = document.getElementById("input").value;
   cip = document.getElementById("choice").value;
   str = str.toUpperCase();
   console.log(str);
   if (cip == "caesar4"){
     let ans = str.replace(/[A-Z]/g, decaesar4);
     console.log(ans);
-    document.getElementById('inputbox').value = ans;
-    document.getElementById("sentenceDescription").innerHTML = "Sentence was DECIPHERED!";
+    document.getElementById('input').value = ans;
+    document.getElementById("instruction").innerHTML = "Sentence was DECIPHERED!";
     return ans;
   }
   else if (cip == "caesar7"){
     let ans = str.replace(/[A-Z]/g, decaesar7);
     console.log(ans);
-    document.getElementById('inputbox').value = ans;
-    document.getElementById("sentenceDescription").innerHTML = "Sentence was DECIPHERED!";
+    document.getElementById('input').value = ans;
+    document.getElementById("instruction").innerHTML = "Sentence was DECIPHERED!";
     return ans;
   }
   else if (cip == "caesar13"){
     let ans = str.replace(/[A-Z]/g, decaesar13);
     console.log(ans);
-    document.getElementById('inputbox').value = ans;
-    document.getElementById("sentenceDescription").innerHTML = "Sentence was DECIPHERED!";
+    document.getElementById('input').value = ans;
+    document.getElementById("instruction").innerHTML = "Sentence was DECIPHERED!";
     return ans;
   }
   else{
